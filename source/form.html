@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Седона - форма отзыва</title>
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logotype.svg" alt="герб города" width="102" height="84">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle main-nav__toggle-off" type="button">
+        <span class="visually-hidden">Кнопка показа меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="#">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__image-wrapper">
+                <img class="page-header__image" src="img/sedona.svg" width="229" height="39" alt="Седона">
+              </div>
+            </header>
+            <main class="page-main">
+              <header class="page-main__header">
+                  <h1 class="page-main__title">Оставьте свой отзыв</h1>
+                  <p class="page-main__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+              </header>
+                <form  class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+                  <fieldset class="form-feedback__fieldset">
+                    <legend class="visually-hidden">Анкета посетителя:</legend>
+                    <p class="form-feedback__caption">Представьтесь</p>
+                    <label class="form-feedback__label" for="name">Имя*:</label>
+                    <input class="form-feedback__input" type="text" required id="name" placeholder="Петр">
+                    <label class="form-feedback__label" for="surname">Фамилия*:</label>
+                    <input class="form-feedback__input" type="text" required id="surname" placeholder="Иванов">
+                    <label class="form-feedback__label" for="patronymic">Отчество:</label>
+                    <input class="form-feedback__input" type="text" id="patronymic" placeholder="Александрович">
+                    <p class="form-feedback__caption">Контактная информация:</p>
+                    <label class="form-feedback__label" for="phone">Контактный телефон*:</label>
+                    <input class="form-feedback__input"  type="tel" required id="phone" placeholder="Введите телефон">
+                    <label class="form-feedback__label" for="mail">Электронная почта*:</label>
+                    <input class="form-feedback__input"  type="email" required id="mail" placeholder="Введите e-mail">
+                    <p class="form-feedback__caption">Ваше общее впечатление:</p>
+                    <input class="form-feedback__radio" type="radio" id="positive" name="impress" checked value="positive">
+                    <label class="form-feedback__label-radio" for="positive">Скорее положительное</label>
+                    <input class="form-feedback__radio" type="radio" id="negative" name="impress" value="negative">
+                    <label class="form-feedback__label-radio" for="negative">Скорее отрицательное</label>
+                    <input class="form-feedback__radio" type="radio" id="neutral" name="impress" value="neutral">
+                    <label class="form-feedback__label-radio" for="neutral">Затрудняюсь ответить</label>
+                    <p class="form-feedback__caption">Посещённые достопримечательности:</p>
+                    <input class="form-feedback__checkbox" type="checkbox" name="bridge" id="bridge" checked>
+                    <label class="form-feedback__label-checkbox" for="bridge">Мост Дьявола</label>
+                    <input class="form-feedback__checkbox" type="checkbox" name="bell" id="bell">
+                    <label class="form-feedback__label-checkbox" for="bell">Гора-Колокол</label>
+                    <input class="form-feedback__checkbox" type="checkbox" name="park" id="park" checked>
+                    <label class="form-feedback__label-checkbox" for="park">Слайд-парк</label>
+                    <input class="form-feedback__checkbox" type="checkbox" name="rocks" id="rocks" checked>
+                    <label class="form-feedback__label-checkbox" for="rocks">Красные скалы</label>
+                    <p class="form-feedback__caption">Опишите свои эмоции:</p>
+                    <textarea class="form-feedback__textarea" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
+                  </fieldset>
+        <button class="button form-feedback__button" type="submit">Отправить отзыв</button>
+        <p class="form-feedback__notification">* — обязательные поля</p>
+      </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__tagline">
+        <p>#visitsedona</p>
+    </div>
+    <div class="page-footer__social">
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a href="https://twitter.com">
+              <span class="visually-hidden">Twitter</span>
+              <img src="icon-twitter.svg" alt="twitter">
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="https://www.facebook.com">
+              <span class="visually-hidden">Facebook</span>
+              <img src="icon-facebook.svg" alt="facebook">
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="https://www.youtube.com">
+              <span class="visually-hidden">Youtube</span>
+              <img src="icon-youtube.svg" alt="youtube">
+            </a>
+          </li>
+        </ul>
+    </div>
+    <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <img src="img/htmlacademy.svg" alt="HTML Academy">
+        </a>
+    </div>
+  </footer>
+</body>

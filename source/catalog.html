@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Седона - форма отзыва</title>
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logotype.svg" alt="герб города" width="102" height="84">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle main-nav__toggle-off" type="button">
+        <span class="visually-hidden">Кнопка показа меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="#">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__image--wrapper">
+      <img class="page-header__image" src="img/sedona.svg" width="229" height="39" alt="Седона">
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__title">Фото и видео</h1>
+    <p class="page-main__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+    <section class="page-main__photo-gallery">
+      <h2 class="visually-hidden">Фотографии местности и достопримечательностей</h2>
+    <article class="photo photo--full">
+      <a class="photo__link" href="#">
+      <img class="photo__image" src="img/content/sunset.jpg" alt="шоссе в седоне">
+      </a>
+      <div class="photo__information">
+        <div class="photo__description">
+            <h3 class="photo__title">Неродные просторы</h3>
+            <p class="photo__author">Автор фото: Борис</p>
+        </div>
+        <div class="photo__like">
+          <button class="button-like" type="button">
+            <img src="img/like.svg" class="button-like__icon" width="22" height="20" alt="Нравится">
+            <span class="visually-hidden">Нравится!</span>
+          </button>
+          <span class="photo__like-count">1350</span>
+        </div>
+      </div>
+    </article>
+    <article class="photo">
+      <a class="photo__link" href="#">
+      <img class="photo__image" src="img/content/plant.jpg" alt="цветущие суккуленты">
+      </a>
+      <div class="photo__information">
+        <div class="photo__description">
+            <h3 class="photo__title">Местная растительность</h3>
+            <p class="photo__author">Автор фото: Сергей</p>
+        </div>
+        <div class="photo__like">
+          <button class="button-like" type="button">
+            <img src="img/like.svg" class="button-like__icon" width="22" height="20" alt="Нравится">
+            <span class="visually-hidden">Нравится!</span>
+          </button>
+          <span class="photo__like--count">143</span>
+        </div>
+      </div>
+    </article>
+    <article class="photo">
+      <a class="photo__link" href="#">
+      <img class="photo__image" src="img/content/north-road.jpg" alt="лесная горная дорога">
+      </a>
+      <div class="photo__information">
+        <div class="photo__description">
+            <h3 class="photo__title">Дорога на север</h3>
+            <p class="photo__author">Автор фото: Петр</p>
+        </div>
+        <div class="photo__like">
+          <button class="button-like" type="button">
+            <img src="img/like.svg" class="button-like__icon" width="22" height="20" alt="Нравится">
+            <span class="visually-hidden">Нравится!</span>
+          </button>
+          <span class="photo__like--count">96</span>
+        </div>
+      </div>
+    </article>
+    <article class="photo">
+      <a class="photo__link" href="#">
+      <img class="photo__image" src="img/content/brige.jpg" alt="фото скалы напоминающей мост">
+      </a>
+      <div class="photo__information">
+        <div class="photo__description">
+            <h3 class="photo__title">Мост дьявола</h3>
+            <p class="photo__author">Автор фото: Антон</p>
+        </div>
+        <div class="photo__likes">
+          <button class="button-like" type="button">
+            <img src="img/like.svg" class="button-like__icon" width="22" height="20" alt="Нравится">
+            <span class="visually-hidden">Нравится!</span>
+          </button>
+          <span class="photo__like-count">254</span>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class="page-main__video-gallery">
+    <h2 class="page-main__title">Все еще сомневаетесь?</h2>
+    <p class="page-main__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+    <div class="video">
+      <img class="video__image" src="img/content/video.jpg" alt="Видео о Седоне">
+      <div class="video-controls video__panel">
+        <div class="video-controls__scale">
+          <button class="video-controls__handle" type="button"></button>
+        </div>
+        <div class="video-controls__buttons">
+          <button class="video-controls__buttons--replay" type="button">
+            <img src="img/replay.svg" width="16" height="20" alt="Заново">
+          </button>
+          <button class="video-controls__buttons--subtitles" type="button">
+            <img src="img/subtitles.svg" width="32" height="20" alt="Субтитры">
+          </button>
+
+            <button class="video-controls__buttons--fullscreen" type="button">
+              <img src="img/fullscreen.svg" width="20" height="20" alt="Полный экран">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__tagline">
+        <p>#visitsedona</p>
+    </div>
+    <div class="page-footer__social">
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a href="https://twitter.com">
+              <span class="visually-hidden">Twitter</span>
+              <img src="icon-twitter.svg" alt="twitter">
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="https://www.facebook.com">
+              <span class="visually-hidden">Facebook</span>
+              <img src="icon-facebook.svg" alt="facebook">
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="https://www.youtube.com">
+              <span class="visually-hidden">Youtube</span>
+              <img src="icon-youtube.svg" alt="youtube">
+            </a>
+          </li>
+        </ul>
+    </div>
+    <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <img src="img/htmlacademy.svg" alt="HTML Academy">
+        </a>
+    </div>
+  </footer>
+</body>
